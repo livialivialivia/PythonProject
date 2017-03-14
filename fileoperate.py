@@ -34,7 +34,7 @@ def change_imagename(path):
             change_imagename(os.path.join(path,x))
 
 img_dir = '/Users/interviewer/Documents/pic for test/Old'
-img_dir = img_dir.replace('\\','/')  #将目录的/都更换为\\
+img_dir = img_dir.replace('\\','/')  #将目录的/都更换为\\,文件操作时,常常配合正则表达式
 start = time.time()
 i = 0
 change_imagename(img_dir)
